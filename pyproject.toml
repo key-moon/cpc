@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cpc"
+version = "0.0.1"
+dependencies = []
+authors = [
+  { name="keymoon", email="kymn0116@gmail.com" },
+]
+description = "A small example package"
+requires-python = ">=3.8"
+classifiers = []
+
+[project.scripts]
+cpc = "cpc:main"
+cpx = "cpc:main"
+cpcd = "cpc:main"
+cpxd = "cpc:main"
+
+[tool.hatch.build.targets.wheel]
+packages=["cpc"]
